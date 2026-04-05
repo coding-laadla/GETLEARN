@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GETLEARN | Learning in Minutes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+    <!-- LEFT: LOGO + NAME -->
+    <div class="nav-left">
+        <img src="logo.png" alt="GETLEARN Logo">
+		
+        <div class="brand-text">
+            <span class="site-name">GETLEARN</span>
+            <span class="site-tagline">learning in minutes</span>
+        </div>
+    </div>
+
+    <!-- RIGHT: MENU -->
+   <nav class="nav-right">
+    <a href="index.html" class="active">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="#contact">Contact</a>
+
+    <!-- Hamburger Menu -->
+    <div class="dropdown" style="display:inline-block; position:relative;">
+        <span onclick="toggleMenu()" style="cursor:pointer; font-size:22px; margin-left:15px;">☰</span>
+
+        <div id="menuDropdown" style="display:none; position:absolute; right:0; background:#fff; 
+             box-shadow:0 4px 8px rgba(0,0,0,0.2); padding:10px; border-radius:6px;">
+
+            <a href="change-password.html" style="display:block; text-decoration:none; color:#333;">
+                Change Password
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <h2>Learn Anything in Just 60–90 Seconds 🎯</h2>
+    <p>Short, powerful lessons by students, teachers, PhD holders & professionals.</p>
+    <button onclick="startLearning()">Start Learning</button>
+</section>
+
+<!-- ================= TOPICS ================= -->
+<section class="topics">
+    <h2>Popular Topics</h2>
+
+<div class="topic-container">
+
+    <div class="card clickable" onclick="openTopic('https://youtu.be/JsixLO5DXS8?si=ddX33Cxo5ar877Hj')">
+	
+        <img src="Programming.jpg" alt="Programming">
+        <h3>Programming</h3>
+        <p>Python, Java, Web Dev & more</p>
+    </div>
+
+    <div class="card clickable" onclick="openTopic('ai.html')">
+        <img src="ai.jpg" alt="AI">
+        <h3>AI & Data Science</h3>
+        <p>ML, AI tools, analytics</p>
+    </div>
+
+    <div class="card clickable" onclick="openTopic('business.html')">
+        <img src="bus.jpg" alt="Business">
+        <h3>Business</h3>
+        <p>Startups, marketing, finance</p>
+    </div>
+
+    <div class="card clickable" onclick="openTopic('science.html')">
+        <img src="science.jpg" alt="Science">
+        <h3>Science</h3>
+        <p>Physics, Chemistry, Research</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- ================= WHY GETLEARN ================= -->
+<section class="why">
+    <h2>Why GETLEARN?</h2>
+    <ul>
+        <li>⚡ Learn fast in minutes</li>
+        <li>🎓 Teach & earn knowledge</li>
+        <li>📱 Mobile-friendly learning</li>
+        <li>🌍 Community-driven education</li>
+    </ul>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+    <h3>About Us</h3>
+    <p>
+        GETLEARN is an online micro-learning platform where anyone passionate
+        about teaching can share knowledge through short videos.
+    </p>
+
+    <p class="phone">📞 +91 7330847445</p>
+    <p class="copy">© 2026 GETLEARN. All Rights Reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #0a66c2;
+    color: white;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+/* Main */
+.main {
+    margin-left: 240px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Upload */
+.upload-section, .stats {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background: #0a66c2;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Video Card */
+.video-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+video {
+    width: 100%;
+}
+
+/* Buttons */
+.actions button {
+    margin-right: 10px;
+}

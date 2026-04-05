@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard | GETLEARN</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<!-- ===== SIDEBAR ===== -->
+<div class="sidebar">
+    <h2>GETLEARN</h2>
+    <a href="index.html">🏠 Home</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="statistics.html">📊 Statistics</a>
+    <a href="earnings.html">💰 Earnings</a>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="main">
+
+<header>
+    <h2>Dashboard 🎓</h2>
+</header>
+
+<!-- Upload -->
+<section class="upload-section">
+    <h3>Upload Video</h3>
+
+    <input type="text" id="title" placeholder="Video Title">
+    <textarea id="description" placeholder="Description"></textarea>
+    <input type="file" id="videoFile" accept="video/*">
+	
+	<button type="button" onclick="uploadVideo()">Upload</button>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+    <h3>Your Stats</h3>
+    <p>Total Views: <span id="totalViews">0</span></p>
+    <p>Coins: <span id="coins">0</span></p>
+    <p>Money (₹): <span id="money">0</span></p>
+</section>
+
+<!-- Videos -->
+<section class="videos">
+    <h3>Your Videos</h3>
+    <div id="videoContainer"></div>
+</section>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
